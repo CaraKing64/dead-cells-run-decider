@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html>
 <body>
+<script> 
 
-<h1> Hello World avacado mmm! </h1>
+function makeBig(){
+    document.getElementById("hello").style.fontSize = '32px'
+    document.getElementById("bigton").style.display = 'none'
+    document.getElementById("smallton").style.display = 'block'
+}
+function makeSmall(){
+    document.getElementById("hello").style.fontSize = '12px'
+    document.getElementById("bigton").style.display = 'block'
+    document.getElementById('smallton').style.display = 'none'
+}
+
+</script>
+<h1 id="hello"> Hello World avacado mmm! </h1>
+
+<button id="bigton" onclick="makeBig()"> B I G! </button>
+<button id="smallton" onclick="makeSmall()">small</button>
 
 </body>
 </html>

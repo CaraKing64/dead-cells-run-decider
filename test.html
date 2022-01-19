@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfying button</title>
+
+    <style>
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            height: 100vh;
+        }
+
+        .btn {
+            background-color: dodgerblue;
+            border: none;
+            color: white;
+            font-family: sans-serif;
+            font-size: 14pt;
+            padding: 0.5em;
+            border-radius: 0.25em;
+            border-bottom: 5px solid hsl(210, 59%, 36%);
+            border-top: 1px solid lightskyblue;
+
+            transition-property: transform, border-bottom;
+            transition-duration: 100ms;
+        }
+
+        .btn:active {
+            transform: translateY(5px);
+            border-bottom: 0px solid lightskyblue;
+        }
+
+        body {
+            background-color: #212121;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script defer>
+        document.getElementById("coolbutton").onclick = () => {
+            window.location.href = atob("aHR0cHM6Ly9wb3JuaHViLmNvbS9nYXk=");
+        }
+    </script>
+</head>
+    <div class="center">
+        <input type="button" id="coolbutton" class="btn" value="DO NOT PRESS">
+    </div>
+</body>
+</html>

@@ -30,11 +30,9 @@ import random
 
 biome_map = {
     "prisoners_quarters": {
-        "dilapidated_arboretum":{
-            "runes":"teleport"
-        },
-        "promenade_of_the_condemned"
-
+        "dilapidated_arboretum":{"runes":"teleport"},
+        "promenade_of_the_condemned":{},
+        "toxic_sewers":{"runes":"teleport"}
     }
 
 }

@@ -1,6 +1,3 @@
-# Copyright 2022 Isaac Carabott, creator of "Dead Cells Run Decider"
-
-
 # ENTER IN YOUR INFORMATION HERE
 runes = {
     "vine":True,
@@ -18,7 +15,11 @@ dlc = {
 visited_biomes = {
     "morass_of_the_banished":True,
     "undying_shores":True,
-    "cavern":True,    
+    "cavern":True,
+    "guardians_haven":True,
+    "mausoleum":True,
+    "infested_shipwreck":True,
+    "lighthouse":True,    
 }
 
 
@@ -31,7 +32,9 @@ biome_map = {
     "prisoners_quarters": {
         "dilapidated_arboretum":{
             "runes":"teleport"
-        }
+        },
+        "promenade_of_the_condemned"
+
     }
 
 }

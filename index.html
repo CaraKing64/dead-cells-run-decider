@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<h1 id="hello"> Hello World avacado mmm yummy </h1>
+    <h1 id="hello"> Dead Cells Run Decider </h1>
 
-<button id="bigton" onclick="makeBig()"> B I G! </button>
-<button id="smallton" onclick="makeSmall()">small</button>
+    <p>Enter in your details here</p>
 
+    <div class="slidecontainer">
+        <input type="range" min="0" max="5" value="0" class="slider" id="bc-slider">
+    </div>
+    <p id="bc-slider-output"></p>
+    <script>
+        var output = document.getElementById("bc-slider-output");
+        var slider = document.getElementById("bc-slider");
+        output.innerHTML = slider.nodeValue;
 
-<script>
-    
-function randint(minimum, maximum){
-    var x = Math.floor(Math.random()*(maximum-minimum))+minimum
-    return x
-}
-var runes = {
-    "vine":true,
-    "teleport":true,
-    "spider":true,
-    "ram":true,
-    "homunculus":true,    
-};
-var dlc = {
-    "rise_of_the_giant":True,
-    "bad_seed":True,
-    "fatal_falls":True,
-    "queen_of_the_sea":True
-};
-var visited_biomes = {
-    "morass_of_the_banished":True,
-    "undying_shores":True,
-    "cavern":True,
-    "guardians_haven":True,
-    "mausoleum":True,
-    "infested_shipwreck":True,
-    "lighthouse":True,    
-};
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+            document.getElementById("bc-counter").src = "img/bc" + this.value + ".png"
+            console.log("img/bc${this.value}.png")
+        }
+    </script>
 
-biome_map = {
-    "prisoners_quarters": {
-        "dilapidated_arboretum":{"runes":"teleport"},
-        "promenade_of_the_condemned":{},
-        "toxic_sewers":{"runes":"teleport"}
-    }
+    <img id="bc-counter">
 
-}
-</script>
+    <script> 
+        
+
+        var runes = {
+            "vine":true,
+            "teleport":true,
+            "spider":true,
+            "ram":true,
+            "homunculus":true,    
+        };
+        var dlc = {
+            "rise_of_the_giant":true,
+            "bad_seed":true,
+            "fatal_falls":true,
+            "queen_of_the_sea":true
+        };
+        var visited_biomes = {
+            "morass_of_the_banished":true,
+            "undying_shores":true,
+            "cavern":true,
+            "guardians_haven":true,
+            "mausoleum":true,
+            "infested_shipwreck":true,
+            "lighthouse":true,    
+        };
+    </script>
+
+    <img src="img/bc1.png" style="transform: translate(83%)">
+    <img src="img/bc1.png" style="transform: translate(166%)">
+    <img src="img/bc1.png" style="transform: translate(249%)">
+    <img src="img/bc1.png" style="transform: translate(332%)">
+    <img src="img/bc1.png" style="transform: translate(415%)">
+    <img src="img/bc1.png" style="transform: translate(500%)">
+
+        
 
 </body>
 </html>

@@ -18,31 +18,7 @@ function generateRun(runes, dlc, visited_biomes){
         },
         "toxic_sewers":{
             "corrupted_prison":{"runes":"spider"},
-            "ramparts":{},"dilapidated_arboretum":{
-                "prison_depths":{"runes":"spider"},
-                "morass_of_the_banished":{},
-                "ramparts":{}
-            },
-            "promenade_of_the_condemned":{
-                "morass_of_the_banished":{"visited":true},
-                "ossuary":{"runes":"teleport"},
-                "ramparts":{},
-                "prison_depths":{"runes":"spider"}
-            },
-            "toxic_sewers":{
-                "corrupted_prison":{"runes":"spider"},
-                "ramparts":{},
-                "ancient_sewers":{"runes":"ram"}
-            },
-            "prison_depths":{
-                "morass_of_the_banished":{"visited":true},
-                "ossuary":{},
-                "ancient_sewers":{"bc":1}
-            },
-            "corrupted_prison":{
-                "ramparts":{"bc":1},
-                "ancient_sewers":{}
-            },
+            "ramparts":{},
             "ancient_sewers":{"runes":"ram"}
         },
         "prison_depths":{
